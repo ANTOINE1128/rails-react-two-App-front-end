@@ -1,4 +1,4 @@
-<h3 align="center"><b>Hello Rails-React</b></h3>
+<h3 align="center"><b>rails-react-two-app</b></h3>
 
 <a name="readme-top"></a>
 
@@ -22,11 +22,13 @@
 - [📝 License](#license)
 
 
-# 📖 Hello Rails-React <a name="about-project"></a>
+# 📖 Hello React Front-En <a name="about-project"></a>
 
-The **Hello Rails-React** is a student project. The goal is to integrate the React front-end with the Rails back-end for one versatile monolithic app that can be hosted from a single source.
-While there are different ways to achieve this, in **Hello Rails-React** I use Webpack with `jsbundling-rails` gem (this approach is recommended by [DHH](https://world.hey.com/dhh/rails-7-will-have-three-great-answers-to-javascript-in-2021-8d68191b): "It's this path you should probably pick if you're going all-in on something like React with JSX or another JavaScript framework that demands a transpilation step").
+The **rails-react-two-app** is a student project. The goal is to integrate the React front-end with the Rails back-end for one versatile monolithic app that can be hosted from a single source.
 
+While there are different ways to achieve this, in **rails-react-two-app** I create two separate apps (React front-end with a Rails back-end) and connect them to display a random message.
+
+This repo consumes API data from [rails-react-two-app](https://github.com/ANTOINE1128/rails-react-two-App) project.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -63,16 +65,23 @@ While there are different ways to achieve this, in **Hello Rails-React** I use W
 
 - **use Ruby on Rails for back-end of the project**
 - **use React framework for front-end of the project**
-- **develop project in one repository**
+- **develop project in two separate repositories**
 
-<!-- GETTING STARTED -->
-## Getting Started <a name="getting-started"></a>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 💻 Getting Started <a name="getting-started"></a>
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
-In order to run this project, you need:
-- A basic understanding of Ruby, Ruby on Rails, and Git
+
+In order to run this project you need:
+
+- GitHub account;
+- Git installed on your OS;
+- VSCode (or another code editor);
+- modern browser (supporting HTML5 and CSS3) is highly recommended;
+- [Node.js and npm](https://nodejs.org/) installed.
 
 ### Setup
 
@@ -81,94 +90,75 @@ Clone this repository to your desired folder:
 Login to your GitHub account. Clone this repository to your desired folder:
 
 > cd my-folder
-> git clone git@github.com:Zilola-Nazarova/hello-rails-react.git
-
-Setup database:
-
-Update [config/database.yml](./config/database.yml) username and password
-
-OR
-
-Create a user (provide the username and password described in [config/database.yml](./config/database.yml)):
-> sudo -u postgres createuser --interactive --pwprompt
+> git clone https://github.com/ANTOINE1128/rails-react-two-App-front-end.git
 
 
 ### Install
 
 Install the dependencies:
-> gem install
 > npm install
-
-Create database:
-> bin/rails db:create
-
-Fill the database with sample records:
-> bin/rails db:seed
 
 ### Usage
 
-To run the server:
-> ./bin/dev
+To run the app in the development mode"."
+> npm start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The page will reload when you make changes.
+You may also see any lint errors in the console.
+
+### Run tests
+
+You can check linter errors by running these commands:
+> npx eslint "**/*.{js,jsx}"
+> npx stylelint "**/*.{css,scss}"
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 ## 👥 Authors <a name="authors"></a>
 
-👤: **Antoine Makdessy**
+👤 **Antoine Makdessy**
 
 - GitHub: [@ANTOINE1128](https://github.com/ANTOINE1128)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/antoine-makdessy/)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-<!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Advanced UI**
+- [ ] **add new routes and components**
+- [ ] **add styles**
+- [ ] **deploy the project**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ANTOINE1128/Budget-app/issues).
+Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- SUPPORT -->
 
 ## ⭐️ Show your support <a name="support"></a>
 
-Please support this project and be a part of something meaningful and impactful. Your contribution can make a significant difference and help us achieve our goals faster.
+If you like this project just star it!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- Grateful to all for inspiring codebase, your dedication, and creativity made a lasting impact on our success. Thank you!
+I would like to thank the Microverse program for the knowledge and skills I have acquired in Modules 1-5.
+
+I am grateful to all previous project reviewers for their advice. Thanks to them I could build this app.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## :question: FAQ <a name="faq"></a>
-
-- **Can I fork and reuse this repository?**
-
-Please feel free to fork and reuse this repository for your projects.
-
-- **Is it okay to improve this repository? Will my changes be accepted?**
-
-We welcome any improvements or new ideas. If your changes are good and align with the project's goals, we would be happy to incorporate them.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
